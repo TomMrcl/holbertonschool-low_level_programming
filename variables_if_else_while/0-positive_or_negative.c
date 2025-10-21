@@ -20,6 +20,6 @@ printf("is positive\n");
 else if (n == O)
 printf("is zero\n");
 else
-printf("is negative\n")
+printf("is negative\n");
 return (0);
 }
