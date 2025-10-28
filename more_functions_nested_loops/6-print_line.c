@@ -1,21 +1,22 @@
 #include "main.h"
-
 /**
- * print_line - function that draws a straight line in the terminal
+ * print_line - fonction qui dessine une ligne
+ *
+ * @n: number of underline
  *
  * Return: Rien
  */
-
 void print_line(int n)
 {
-	int i;
+	int j;
 
 	if (n <= 0)
 	{
 		_putchar('\n');
+		return;
 	}
 
-	for (i = 1; i < n; i++)
+	for (j = 1; j <= n; j++)
 	{
 		_putchar('_');
 	}
