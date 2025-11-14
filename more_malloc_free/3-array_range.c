@@ -13,19 +13,21 @@
 
 int *array_range(int min, int max)
 {
-	int *array;
-	int i, size;
+	int *grid;
+	int i;
 
-	if (min >= max)
+	if (min > max)
 		return (NULL);
 
-	size = max - min;
-	array = malloc(size * sizeof(int));
-	if (array == NULL)
+	grid = malloc((max - min + 1) * sizeof(int));
+
+	if (grid == NULL)
 		return (NULL);
 
-	for (i = 0; i < size; i++)
-		array[i] = min + i;
+	for (i = 0; i < (max - min + 1); i++)
+	{
+		grid[i] = min + i;
+	}
 
-	return (array);
+	return (grid);
 }
