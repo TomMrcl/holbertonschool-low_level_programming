@@ -1,5 +1,6 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
+
 /**
  * sum_them_all - Sums all its parameters.
  * @n: The number of parameters.
@@ -7,6 +8,7 @@
  *
  * Return: The sum of all parameters. If n is 0, return 0.
  */
+
 int sum_them_all(const unsigned int n, ...)
 {
 
